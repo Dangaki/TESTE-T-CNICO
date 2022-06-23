@@ -18,4 +18,5 @@ public class Veiculo {
     public void setTipoCombustivel(String tipoCombustivel) {
         this.tipoCombustivel = tipoCombustivel;
     }
+
 }

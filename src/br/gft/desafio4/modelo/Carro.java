@@ -1,17 +1,18 @@
 package br.gft.desafio4.modelo;
 
-public class Carro
-{
+public class Carro extends Veiculo {
     private String modelo;
     private String marca;
 
     public Carro()
     {
+        super();
         this.modelo = "";
         this.marca = "";
     }
-    public Carro(String modelo, String marca)
-    {
+
+    public Carro(String tipoCombustivel, String modelo, String marca) {
+        super(tipoCombustivel);
         this.modelo = modelo;
         this.marca = marca;
     }
@@ -32,5 +33,12 @@ public class Carro
         this.marca = marca;
     }
 
-
+    @Override
+    public String toString() {
+        return "Carro{" +
+                "modelo='" + modelo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", tipoCombustivel='" + tipoCombustivel + '\'' +
+                '}';
+    }
 }
